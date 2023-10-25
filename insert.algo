@@ -1,0 +1,17 @@
+ALGORITHM algorithm_name
+VAR
+    arr: :ARRAY_OF INTEGER[15];
+    i,j?temp:integer
+BEGIN
+  write ("give the elements of the arr")
+  read (arr)
+  for i from 0 to arr[i].lenght-1 do;
+  for j=i+1 to arr[i].lenght-1 do;
+  if arr [j]< arr[j-1] THEN
+  temp:= arr[j]
+  arr[j]:= arr[j-1]
+  arr:= temp
+  end for
+  end if 
+  
+END
